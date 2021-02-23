@@ -83,7 +83,7 @@ create/sign a client and server certificate.  The client and server authenticate
 each other on every request using the CA certificate as a source of truth.
 POSIX permissions are used locally to control access to the certs... the
 `stenographer` user which runs steno has read access to the server key
-(`steno:root -r--------`).  The `stenographer` group as read access to the
+(`steno:root -r--------`).  The `stenographer` group has read access to the
 client key (`root:steno ----r-----`).  Key usage extensions specify that the
 server key must be used as a TLS server, and the client key must be used as a
 TLS client.
